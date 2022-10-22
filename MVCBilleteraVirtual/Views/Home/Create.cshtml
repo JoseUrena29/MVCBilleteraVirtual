@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Agregar Tarjetas";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Agregar Tarjetas</h1>
+</div>
+
+<style>
+    .card {
+                margin: 0 auto;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                width: 40%;
+                border-radius: 5px;
+            }
+</style>
+
+<div class="text-center">
+    <form asp-action="Index" asp-controller="Home">
+        <button class="btn btn-success" type="submit">Home</button>
+    </form>
+</div>
+<hr />
+
+
+
+<div class="card">
+    <div class="text-center">
+        <div class="flex-shrink-0">
+            <img src=/images/emisor.jpg class="avatar" alt="..." style="width:300px">
+        </div>
+        <div class="card shadow-sm" style="width:252px">
+            <div class="card-body">
+                <form asp-controller="Home" asp-action="GuardarTarjeta" method="POST">
+                    <hr />
+                    <div class="form-floating mb-3">
+                        <input name="txtIDTarjeta" type="text" class="form-control" id="floatingInput" placeholder="name@example.com" readonly required>
+                        <label for="floatingInput">IDTarjeta</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input name="txtDueño" type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                        <label for="floatingInput">Dueño</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select name="selectBanco" class="form-select" id="floatingSelect" aria-label="Floating label select example" required>
+                            <option selected>Menu Banco</option>
+                            <option value="BNCR">BNCR</option>
+                            <option value="BCR">BCR</option>
+                            <option value="BAC">BAC</option>
+                            <option value="Scotiabank">Scotiabank</option>
+                        </select>
+                        <label for="floatingSelect">Seleccione el Banco</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select name="selectEmisor" class="form-select" id="floatingSelect" aria-label="Floating label select example" required>
+                            <option selected>Menu Emisor</option>
+                            <option value="Visa">Visa</option>
+                            <option value="Mastercard">Mastercard</option>
+                            <option value="AmericanExpress">AmericanExpress</option>
+                        </select>
+                        <label for="floatingSelect">Seleccione el Emisor</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input name="txtNumeroTarjeta" type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                        <label for="floatingInput">Número Tarjeta</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input name="txtCodigoCVV" type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                        <label for="floatingInput">Código CVV</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input name="txtFechaExpiracion" type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                        <label for="floatingInput">Fecha Expiración</label>
+                    </div>
+                    <hr />
+                    <button type="submit" class="btn btn-primary"> + Agregar Tarjeta</button>
+                    <hr />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

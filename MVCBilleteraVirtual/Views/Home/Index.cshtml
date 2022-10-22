@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Home Billetera Virtual";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Billetera Virtual</h1>
+</div>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+         .card {
+             margin: 0 auto;
+             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+             transition: 0.3s;
+             width: 40%;
+             border-radius: 5px;
+         }
+
+             .card:hover {
+                 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+             }
+
+         .avatar {
+             margin: 0px 300px 0px;
+             border-radius: 5px 5px 0 0;
+         }
+
+        img {
+             border-radius: 5px 5px 0 0;
+         }
+
+         .container {
+             padding: 2px 16px;
+         }
+
+    </style>
+</head>
+
+<div class="text-center">
+    <h2>Tus Tarjetas </h2>
+</div>
+
+<div class="text-center">
+    <form asp-action="Create" asp-controller="Home">
+        <button class="btn btn-success" type="submit">+ Agregar Tarjetas</button>
+    </form>
+</div>
+
+@foreach (var @tarjetas in @ViewBag.Tarjetas)
+{
+    <hr />
+    <div class="card">
+        <div class="flex-shrink-0">
+            <img src=@tarjetas.FotoBanco class="card-img-top" alt="..." style="width:90px">
+        </div>
+        <div class="container">
+            <h4><b>@tarjetas.Emisor</b></h4>
+            <p class="text-center">@tarjetas.NumeroTarjeta</p>
+        </div>
+        <div class="flex-shrink-0">
+            <img src=@tarjetas.FotoEmisor class="avatar" alt="..." style="width:60px">
+        </div>
+    </div>
+}
