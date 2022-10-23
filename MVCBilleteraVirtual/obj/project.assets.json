@@ -2783,11 +2783,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jose Ureña\\source\\reposPrograV\\MVCBilleteraVirtual\\MVCBilleteraVirtual\\MVCBilleteraVirtual\\MVCBilleteraVirtual.csproj",
+      "projectUniqueName": "C:\\Users\\Jose Ureña\\source\\reposPrograV\\MVCBilleteraVirtual\\MVCBilleteraVirtual\\MVCBilleteraVirtual.csproj",
       "projectName": "MVCBilleteraVirtual",
-      "projectPath": "C:\\Users\\Jose Ureña\\source\\reposPrograV\\MVCBilleteraVirtual\\MVCBilleteraVirtual\\MVCBilleteraVirtual\\MVCBilleteraVirtual.csproj",
+      "projectPath": "C:\\Users\\Jose Ureña\\source\\reposPrograV\\MVCBilleteraVirtual\\MVCBilleteraVirtual\\MVCBilleteraVirtual.csproj",
       "packagesPath": "C:\\Users\\Jose Ureña\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jose Ureña\\source\\reposPrograV\\MVCBilleteraVirtual\\MVCBilleteraVirtual\\MVCBilleteraVirtual\\obj\\",
+      "outputPath": "C:\\Users\\Jose Ureña\\source\\reposPrograV\\MVCBilleteraVirtual\\MVCBilleteraVirtual\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jose Ureña\\AppData\\Roaming\\NuGet\\NuGet.Config",

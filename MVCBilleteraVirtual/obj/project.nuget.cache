@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LxDCftCOLUHvKYs6wRuhmktemWaLekvtTAgq/QQ5hUJAHpQiRm4qCEwQ8XnoIe0tO2JTEBpo30DZL/mFRAXZUA==",
+  "dgSpecHash": "ClY3+4hz9bNhwFSLvQEbGY6xr32uSV5E2i8P7uCxI1RMNBXVp5ROrfQ/v7o3Zza/3haxGZSzUgH8IO/LFflRDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jose Ureña\\source\\reposPrograV\\MVCBilleteraVirtual\\MVCBilleteraVirtual\\MVCBilleteraVirtual\\MVCBilleteraVirtual.csproj",
+  "projectFilePath": "C:\\Users\\Jose Ureña\\source\\reposPrograV\\MVCBilleteraVirtual\\MVCBilleteraVirtual\\MVCBilleteraVirtual.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jose Ureña\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Jose Ureña\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
